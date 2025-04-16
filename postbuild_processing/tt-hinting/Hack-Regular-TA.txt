@@ -21,5 +21,12 @@ plus touch 4,5,10,11          y 0.5    @12
 plus touch 4,5                y 1.0    @13
 
 # U+0030 zero glyph ID 548
-zero touch 35,36,45,46,47,56  y -0.5   @8
-zero touch 35,36,56           y -1.0   @12,13,14
+# zero touch 35,36,45,46,47,56  y -0.5   @8
+# zero touch 35,36,56           y -1.0   @12,13,14
+# Note: These are commented out because I've overwritten the zero glyph
+#       with a variant, I don't need TTF hinting, and ttfautohint fails
+#       with this error during the build process:
+#
+#           postbuild_processing/tt-hinting/Hack-Regular-TA.txt:24:18: invalid range (values must be within [0;42]) (0x20B)
+#             zero touch 35,36,45,46,47,56  y -0.5   @8
+#                              ^

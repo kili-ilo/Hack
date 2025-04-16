@@ -1,0 +1,3 @@
+[submodule "chrissimpkins-fontname-script"]
+	path = chrissimpkins-fontname-script
+	url = https://github.com/chrissimpkins/fontname.py
