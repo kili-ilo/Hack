@@ -211,12 +211,20 @@ if ! [ -d build/ttf ]; then
 fi
 
 mv master_ttf/hinted/Hack-Regular.ttf build/ttf/Hack-Regular.ttf
+python3 ./chrissimpkins-fontname-script/fontname.py "Hack (w/ slashed 0)" \
+  build/ttf/Hack-Regular.ttf
 echo "Regular ttf build path: build/ttf/Hack-Regular.ttf"
 mv master_ttf/hinted/Hack-Italic.ttf build/ttf/Hack-Italic.ttf
+python3 ./chrissimpkins-fontname-script/fontname.py "Hack (w/ slashed 0)" \
+  build/ttf/Hack-Italic.ttf
 echo "Italic ttf build path: build/ttf/Hack-Italic.ttf"
 mv master_ttf/hinted/Hack-Bold.ttf build/ttf/Hack-Bold.ttf
+python3 ./chrissimpkins-fontname-script/fontname.py "Hack (w/ slashed 0)" \
+  build/ttf/Hack-Bold.ttf
 echo "Bold ttf build path: build/ttf/Hack-Bold.ttf"
 mv master_ttf/hinted/Hack-BoldItalic.ttf build/ttf/Hack-BoldItalic.ttf
+python3 ./chrissimpkins-fontname-script/fontname.py "Hack (w/ slashed 0)" \
+  build/ttf/Hack-BoldItalic.ttf
 echo "Bold Italic ttf build path: build/ttf/Hack-BoldItalic.ttf"
 
 # Remove master_ttf directory
