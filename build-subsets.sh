@@ -37,13 +37,17 @@ SFNTWOFF_VERSION="1.1.0"
 SFNTWOFF="sfnt2woff-zopfli-$SFNTWOFF_VERSION"
 
 # Path to sfnt2woff-zopfli executable
-SFNTWOFF_BIN="$SFNTWOFF_BUILD/$SFNTWOFF/sfnt2woff-zopfli"
+# SFNTWOFF_BIN="$SFNTWOFF_BUILD/$SFNTWOFF/sfnt2woff-zopfli"
+# This works for me, after installing it via apt on Debian 12.
+SFNTWOFF_BIN="/usr/bin/sfnt2woff-zopfli"
 ZOPFLI_ITERATIONS="3"
 
 # The woff2 git clone directory.
 WOFF2_BUILD="$HOME"
 # woff2 executable path
-WOFF2_BIN="$WOFF2_BUILD/woff2/woff2_compress"
+# WOFF2_BIN="$WOFF2_BUILD/woff2/woff2_compress"
+# This works for me, after installing it via apt on Debian 12.
+WOFF2_BIN="/usr/bin/woff2_compress"
 
 # temporary source directory for subset source files
 TEMP_SOURCE="source/temp"

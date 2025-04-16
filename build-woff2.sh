@@ -24,7 +24,9 @@ BUILD="$HOME"
 INST="$HOME/woff2"
 
 # woff2 executable path
-WOFF2_BIN="$BUILD/woff2/woff2_compress"
+# WOFF2_BIN="$BUILD/woff2/woff2_compress"
+# This works for me, after installing it via apt on Debian 12.
+WOFF2_BIN="/usr/bin/woff2_compress"
 
 
 # The font build directory paths and file paths for the woff builds
